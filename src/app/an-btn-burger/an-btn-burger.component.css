@@ -2,11 +2,8 @@
     position: relative;
     width: 30px;
     height: 30px;
-    background: white;
     margin: 10px;
-    border: 5px solid white;
     box-sizing: content-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: all 0.3s;
 }
 
@@ -35,10 +32,6 @@
     bottom: 5px;
 }
 
-.an-btn-burger:hover{
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
-}
-
 .an-btn-burger:hover > .an-btn-burger-meat{
     width: 90%;
 }
@@ -49,18 +42,6 @@
 }
 
 /***** Toggled ******/
-
-.toggled.an-btn-burger{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: white;
-    margin: 10px;
-    border: 5px solid white;
-    box-sizing: content-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s;
-}
 
 .toggled .an-btn-burger-top{
     top: 50%;

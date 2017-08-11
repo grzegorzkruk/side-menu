@@ -1,12 +1,16 @@
 <div class="an-container" [ngClass]="{'an-side-panel-open': menuOpen}" >
   <div class="an-side-pusher">
+    <!--Side panel-->
     <div class="an-side-panel">
       <ng-content select=".an-side-panel"></ng-content>
     </div>
+    <!--END: Side panel-->
+    <!--Burger button-->
     <div class="menu-btn-container" (click)="togglePanel()">
       <an-btn-burger [toggled]="menuOpen"></an-btn-burger>
     </div>
-    <!--Content container-->
+    <!--Burger button-->
+    <!--END: Content container-->
     <div class="an-content">
       <div class="an-content-inner">
         <ng-content select=".an-content-inner"></ng-content>

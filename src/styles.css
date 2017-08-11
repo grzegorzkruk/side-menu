@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "global-styles/normalize.css";
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}

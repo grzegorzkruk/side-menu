@@ -1,14 +1,9 @@
 <an-side-menu-layout>
   <ng-container class="an-side-panel">
-    <ul>
-      <li>1</li>
-      <li>2</li>
-    </ul>
+    <div class="an-logo"></div>
+    <navbar></navbar>
   </ng-container>
-  <ng-container class="an-content-inner">
-    <div class="main clearfix">
-      <div class="column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium excepturi odit eos harum similique quasi incidunt, nobis vitae dicta.</div>
-      <div class="column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus perspiciatis ipsam possimus delectus fuga dicta dolor aliquam tempora sit omnis.</div>
-    </div>
+  <ng-container class="an-content">
+    <router-outlet></router-outlet>
   </ng-container>
 </an-side-menu-layout>

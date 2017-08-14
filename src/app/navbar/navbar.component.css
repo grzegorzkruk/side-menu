@@ -1,0 +1,79 @@
+.an-navbar,
+.an-navbar ul,
+.an-navbar li{
+    width: 100%;
+}
+
+.an-navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.an-navbar li{
+    position: relative;
+    color: white;
+    height: 50px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-transform: capitalize;
+    font-weight: bold;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.an-navbar li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 0);
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+    background: white;
+}
+
+.an-navbar li.active::after{
+    content: '';
+    transform: translate(0, 0);
+}
+
+.an-navbar li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4285f4;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+}
+
+.an-navbar li.active::before{
+    width: 20px;
+}
+
+.an-navbar .active{
+    background: white;
+    color: black;
+}
+
+.an-navbar-label{
+    line-height: 50px;
+    padding-left: 30px;
+    transition: all 0.3s;
+}
+
+.an-navbar li.active > .an-navbar-label{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    color: black;
+}
+.an-navbar li:hover > .an-navbar-label{
+    color: #ccc;
+}

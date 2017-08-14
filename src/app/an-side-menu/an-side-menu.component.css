@@ -15,8 +15,8 @@
 }
 
 .an-content{
-    padding: 30px;
-    overflow-y: scroll;
+    top: 50px;
+    height: calc(100% - 50px);
     background: transparent;
 }
 
@@ -28,14 +28,15 @@
 	left: 0;
 	z-index: 99;
 	height: 100%;
-	-webkit-transition: -webkit-transform 0.5s;
-	transition: transform 0.5s;
+    width: 100%;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
 
 .an-side-panel-open .an-side-pusher{
-    width: 100%;
+    width: calc(100% - 300px);
 	height: 100%;
 	opacity: 1;
     -webkit-transform: translate3d(300px, 0, 0);
@@ -49,7 +50,7 @@
     z-index: 9999;
     width: 300px;
     height: 100%;
-    background: #ccc;
+    background: black;
 	visibility: hidden;
     transition: all 0.5s;
     -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
@@ -77,9 +78,7 @@
 
 .menu-btn-container{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    width: 100%;
+    background: #ccc;
     z-index: 999;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }

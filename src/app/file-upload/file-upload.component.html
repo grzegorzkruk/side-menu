@@ -1,0 +1,18 @@
+<progress class="an-progress" *ngIf="currentUpload" value="" max=""></progress>
+<div class="an-dropzone"
+  fileDrop
+  (filesDropped)="handleDrop($event)"
+  (filesHovered)="dropzoneState($event)"
+  [ngClass]="{'active': dropzoneActive}">
+  <span class="an-dropzone-label">Przeciągnij pliki i upuś tutaj</span>
+</div>
+<div class="an-btn-upload">
+  <label for="an-btn-upload-input" class="an-btn-upload-label">Dodaj pliki</label>
+  <input id="an-btn-upload-input" 
+      class="an-btn-upload-input" 
+      type="file"
+      (change)="fileChange($event.target.files)"
+      accept=".pdf,.doc,.docx" 
+      multiple>
+</div>
+

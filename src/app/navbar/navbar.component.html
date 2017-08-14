@@ -1,0 +1,7 @@
+<nav class="an-navbar">
+  <ul>
+    <li *ngFor="let link of navLinks" routerLink="{{link.path}}" routerLinkActive="active current">
+      <span class="an-navbar-label">{{ link.label }}</span>
+    </li>
+  </ul>
+</nav>

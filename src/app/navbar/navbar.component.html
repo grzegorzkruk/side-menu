@@ -1,6 +1,9 @@
 <nav class="an-navbar">
   <ul>
-    <li *ngFor="let link of navLinks" routerLink="{{link.path}}" routerLinkActive="active current">
+    <li *ngFor="let link of navLinks"
+    routerLink="{{link.path}}"
+    routerLinkActive="active current"
+    [routerLinkActiveOptions]="{exact:true}">
       <span class="an-navbar-label">{{ link.label }}</span>
     </li>
   </ul>

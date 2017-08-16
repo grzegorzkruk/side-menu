@@ -16,6 +16,7 @@ import { FileDropDirective } from './file-drop.directive';
 import { AnProgressComponent } from './an-progress/an-progress.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { MultiSelectComponent } from './multi-select/multi-select.component';
+import { AnTableComponent } from './an-table/an-table.component';
 
 @NgModule({
   declarations: [

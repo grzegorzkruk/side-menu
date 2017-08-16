@@ -1,0 +1,19 @@
+.an-progress{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.an-progress-bar{
+    height: 100%;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+.an-progress-value{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4285f4;
+}

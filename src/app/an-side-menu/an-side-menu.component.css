@@ -81,4 +81,9 @@
     width: 100%;
     background: #ccc;
     z-index: 999;
+    height: 50px;
+}
+
+an-btn-burger{
+    position: absolute;
 }

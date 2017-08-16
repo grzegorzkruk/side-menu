@@ -1,10 +1,11 @@
-<progress class="an-progress" *ngIf="currentUpload" value="" max=""></progress>
+<an-progress class="an-progress" *ngIf="currentUpload" [value]="50" [max]="100"></an-progress>
+
 <div class="an-dropzone"
   fileDrop
   (filesDropped)="handleDrop($event)"
   (filesHovered)="dropzoneState($event)"
   [ngClass]="{'active': dropzoneActive}">
-  <span class="an-dropzone-label">Przeciągnij pliki i upuś tutaj</span>
+  <span class="an-dropzone-label">PrzeciągniWj pliki i upuś tutaj</span>
 </div>
 <div class="an-btn-upload">
   <label for="an-btn-upload-input" class="an-btn-upload-label">Dodaj pliki</label>

@@ -15,6 +15,7 @@ import { ConstantsManagerComponent } from './constants-manager/constants-manager
 import { FileDropDirective } from './file-drop.directive';
 import { AnProgressComponent } from './an-progress/an-progress.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { MultiSelectComponent } from './multi-select/multi-select.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     ConstantsManagerComponent,
     FileDropDirective,
     AnProgressComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    MultiSelectComponent
   ],
   imports: [
     BrowserModule,

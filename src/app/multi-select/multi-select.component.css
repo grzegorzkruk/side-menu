@@ -1,0 +1,69 @@
+.an-select{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    background: #4285f4;
+    box-sizing: border-box;
+}
+
+.an-select-input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 2px 8px;
+    outline: none;
+    color: white;
+}
+
+.an-select-input::placeholder{
+    color: white;
+}
+
+.an-select-input::-moz-placeholder{
+    color: white;
+}
+
+.an-select-input::-webkit-input-placeholder{
+    color: white;
+}
+
+.an-select-btn-toggle{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.an-select-popup{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    max-height: 500px;
+}
+.an-select-popup ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.an-select-popup li{
+    padding: 0 10px;
+    line-height: 40px;
+}
+
+.an-select-popup li:hover{
+    background-color: grey !important;
+}
+
+.an-select-popup li:nth-child(odd){
+    background: #e4e4e4;
+}

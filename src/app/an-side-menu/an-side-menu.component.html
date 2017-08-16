@@ -6,8 +6,10 @@
     </div>
     <!--END: Side panel-->
     <!--Burger button-->
-    <div class="menu-btn-container" (click)="togglePanel()">
-      <an-btn-burger [toggled]="menuOpen"></an-btn-burger>
+    <div class="menu-btn-container">
+      <div>
+        <an-btn-burger [toggled]="menuOpen" (click)="togglePanel()"></an-btn-burger>
+      </div>
     </div>
     <!--Burger button-->
     <!--END: Content container-->

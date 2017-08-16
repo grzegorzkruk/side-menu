@@ -1,0 +1,29 @@
+<div class="an-select">
+  <input type="text" class="an-select-input" 
+    placeholder="{{placeholder}}"
+    (focus)="OpenSelect()"
+    (blur)="CloseSelect()"
+    #searchValue
+    (keyup)="DoSearch(searchValue)">
+  <span class="an-select-btn-toggle" (click)="ToggleSelect()"> v </span>
+</div>
+<div class="an-select-popup" *ngIf="listOpen">
+  <div class="an-select-popup-inner">
+    <ul>
+      <li>Opcja 1</li>
+      <li>Opcja 2</li>
+      <li>Opcja 3</li>
+      <li>Opcja 4</li>
+    </ul>
+  </div>
+</div>
+<div class="an-select-popup" *ngIf="searchListOpen">
+  <div class="an-select-popup-inner">
+    <ul>
+      <li>Opcja 1</li>
+      <li>Opcja 2</li>
+      <li>Opcja 3</li>
+      <li>Opcja 4</li>
+    </ul>
+  </div>
+</div>
